@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .juzi {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+        }
+        
+        .title {
+            font-size: 50px;
+            color: transparent;
+            background: linear-gradient(to left, red, yellow, orange);
+            -webkit-background-clip: text;
+        }
+        
+        sub {
+            font-size: 15px;
+            color: transparent;
+            background: linear-gradient(to left, red, yellow, orange);
+            -webkit-background-clip: text;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: calc(100vh - 150px);
+        }
+        
+        .item {
+            position: absolute;
+            top: -105px;
+            left: 52%;
+            border: 0 solid transparent;
+            border-top: 30px solid rgb(11, 143, 11);
+            border-radius: 10px 70px 0 10px;
+            width: 100px;
+            height: 100px;
+            transform: rotateZ(-80deg);
+        }
+        
+        .body {
+            width: 400px;
+            height: 350px;
+            background-color: rgb(233, 118, 10);
+            position: relative;
+            border-radius: 200px 200px 190px 190px;
+        }
+        
+        .line1 {
+            width: 350px;
+            height: 350px;
+            border: 2px solid black;
+            position: absolute;
+            left: 25px;
+            border-radius: 175px;
+        }
+        
+        .line2 {
+            width: 240px;
+            height: 350px;
+            border: 2px solid black;
+            position: absolute;
+            left: 80px;
+            border-radius: 120px/175px;
+        }
+        
+        .top {
+            width: 350px;
+            height: 150px;
+        }
+        
+        .eye1 {
+            width: 0;
+            height: 0;
+            border-left: 90px solid yellow;
+            border-top: 20px solid transparent;
+            border-bottom: 40px solid transparent;
+            transform: rotateZ(25deg);
+            position: absolute;
+            top: 90px;
+            left: 80px;
+            border-radius: 20px;
+        }
+        
+        .eye2 {
+            width: 0;
+            height: 0;
+            border-right: 90px solid yellow;
+            border-top: 20px solid transparent;
+            border-bottom: 40px solid transparent;
+            transform: rotateZ(-25deg);
+            position: absolute;
+            top: 90px;
+            right: 80px;
+            border-radius: 20px;
+        }
+        
+        .central {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nose {
+            width: 0;
+            height: 0;
+            border-bottom: 40px solid yellow;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            border-radius: 20px;
+        }
+        
+        .bottom {
+            position: relative;
+            height: 130px;
+        }
+        
+        .tail-leftbottom {
+            position: absolute;
+            left: 65px;
+            top: 10px;
+            border: 0 solid transparent;
+            border-bottom: 30px solid rgb(94, 39, 7);
+            border-radius: 0 0 10px 50px;
+            width: 70px;
+            height: 50px;
+            transform: rotateZ(45deg);
+        }
+        
+        .diamond1 {
+            position: absolute;
+            left: 100px;
+            top: 50px;
+            width: 50px;
+            height: 50px;
+            background: rgb(94, 39, 7);
+            transform: rotateZ(45deg);
+            border-radius: 5px;
+        }
+        
+        .diamond2 {
+            position: absolute;
+            left: 140px;
+            top: 55px;
+            width: 50px;
+            height: 50px;
+            background: rgb(94, 39, 7);
+            transform: rotateZ(45deg);
+            border-radius: 5px;
+        }
+        
+        .diamond3 {
+            position: absolute;
+            left: 180px;
+            top: 50px;
+            width: 50px;
+            height: 50px;
+            background: rgb(94, 39, 7);
+            transform: rotateZ(45deg);
+            border-radius: 5px;
+        }
+        
+        .diamond4 {
+            position: absolute;
+            left: 220px;
+            top: 55px;
+            width: 50px;
+            height: 50px;
+            background: rgb(94, 39, 7);
+            transform: rotateZ(45deg);
+            border-radius: 5px;
+        }
+        
+        .diamond5 {
+            position: absolute;
+            left: 260px;
+            top: 50px;
+            width: 50px;
+            height: 50px;
+            background: rgb(94, 39, 7);
+            transform: rotateZ(45deg);
+            border-radius: 5px;
+        }
+        
+        .tail-rightbottom {
+            border: 0 solid transparent;
+            border-bottom: 30px solid rgb(94, 39, 7);
+            border-radius: 0 0 50px 10px;
+            width: 70px;
+            height: 50px;
+            position: absolute;
+            right: 55px;
+            top: 10px;
+            transform: rotateZ(-40deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="juzi">
+        <div class="title">Happy Halloween<sub>dbp我给南瓜（橘子）丢脸了</sub></div>
+    </div>
+    <div class="container">
+        <div class="body">
+            <div class="top">
+                <div class="item"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="eye1"></div>
+                <div class="eye2"></div>
+            </div>
+            <div class="central">
+                <div class="nose"></div>
+            </div>
+            <div class="bottom">
+                <div class="tail-leftbottom"></div>
+                <div class="diamond1"></div>
+                <div class="diamond2"></div>
+                <div class="diamond3"></div>
+                <div class="diamond4"></div>
+                <div class="diamond5"></div>
+                <div class="tail-rightbottom"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
